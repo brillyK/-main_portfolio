@@ -75,14 +75,14 @@ body {
         display: block;
         background-color: $black;
         width: 100%;
-        height: 856px;
+        height: 100vh;
         .o-container {
             position: relative;
             width: 100%;
-            height: 856px;
+            height: 100vh;
             .c-hero__header {
                 width: 100%;
-                height: 856px;
+                height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -128,109 +128,6 @@ body {
                     position: absolute;
                     bottom: 75px;
                     right: 60px;
-                }
-            }
-        }
-    }
-    .main-01 {
-        display: block;
-        background-color: $black;
-        width: 100%;
-        height: 856px;
-        #mission {
-            position: relative;
-            .c-mission__title {
-                position: absolute;
-                top: 178px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                h2 {
-                    font-size: 1.125rem;
-                    font-weight: bold;
-                    color: $primary;
-                    .c-section-title {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .block {
-                            position: relative;
-                            padding: 13px 0;
-                            &::before,
-                            &::after {
-                                border-bottom: 1px solid;
-                                border-top: 1px solid;
-                                content: '';
-                                display: block;
-                                pointer-events: none;
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                width: 1rem;
-                                transform: scaleX(var(--lines-scale));
-                                transform-origin: center center;
-                            }
-
-                            &::before {
-                                left: 0;
-                            }
-
-                            &::after {
-                                right: 0;
-                            }
-                        }
-                    }
-                }
-            }
-            .marquee_wrap {
-                padding-top: 270px;
-                .marquee_inner {
-                    overflow: hidden;
-                    display: flex;
-
-                    .box {
-                        animation: marquee infinite linear;
-                        white-space: nowrap;
-                        letter-spacing: -1px;
-                        font-size: 70px;
-                        padding-left: 24px;
-                        color: transparent;
-                        -webkit-text-stroke: 0.5px $secondary;
-                        font-weight: bold;
-                        font-style: italic;
-                        .sub {
-                            color: $white;
-                            font-weight: bold;
-                            font-style: normal;
-                        }
-                    }
-                    .top {
-                        animation-duration: 80s;
-                        animation-direction: normal;
-                    }
-                    .second {
-                        animation-duration: 100s;
-                        animation-direction: reverse;
-                    }
-                    .third {
-                        animation-duration: 120s;
-                        animation-direction: normal;
-                    }
-                    .bottom {
-                        animation-duration: 140s;
-                        animation-direction: reverse;
-                    }
-                }
-
-                @keyframes marquee {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-100%);
-                    }
                 }
             }
         }

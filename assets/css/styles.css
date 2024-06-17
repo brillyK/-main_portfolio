@@ -334,16 +334,16 @@ body .c-hero {
   display: block;
   background-color: #000;
   width: 100%;
-  height: 856px;
+  height: 100vh;
 }
 body .c-hero .o-container {
   position: relative;
   width: 100%;
-  height: 856px;
+  height: 100vh;
 }
 body .c-hero .o-container .c-hero__header {
   width: 100%;
-  height: 856px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,18 +389,18 @@ body .c-hero .o-container .c-icon-scroll img {
   bottom: 75px;
   right: 60px;
 }
+
 body .main-01 {
   display: block;
   background-color: #000;
   width: 100%;
-  height: 856px;
+  height: 100vh;
 }
 body .main-01 #mission {
   position: relative;
 }
 body .main-01 #mission .c-mission__title {
-  position: absolute;
-  top: 178px;
+  padding: 175px 0 60px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -439,9 +439,6 @@ body .main-01 #mission .c-mission__title h2 .c-section-title .block::before {
 body .main-01 #mission .c-mission__title h2 .c-section-title .block::after {
   right: 0;
 }
-body .main-01 #mission .marquee_wrap {
-  padding-top: 270px;
-}
 body .main-01 #mission .marquee_wrap .marquee_inner {
   overflow: hidden;
   display: flex;
@@ -467,15 +464,15 @@ body .main-01 #mission .marquee_wrap .marquee_inner .top {
   animation-direction: normal;
 }
 body .main-01 #mission .marquee_wrap .marquee_inner .second {
-  animation-duration: 100s;
+  animation-duration: 90s;
   animation-direction: reverse;
 }
 body .main-01 #mission .marquee_wrap .marquee_inner .third {
-  animation-duration: 120s;
+  animation-duration: 90s;
   animation-direction: normal;
 }
 body .main-01 #mission .marquee_wrap .marquee_inner .bottom {
-  animation-duration: 140s;
+  animation-duration: 60s;
   animation-direction: reverse;
 }
 @keyframes marquee {
@@ -485,4 +482,323 @@ body .main-01 #mission .marquee_wrap .marquee_inner .bottom {
   100% {
     transform: translateX(-100%);
   }
+}
+body .main-02 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  padding: 175px 127px 175px 138px;
+}
+body .main-02 .profile-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 80px 0 0;
+}
+body .main-02 .profile-first .profile-img {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+body .main-02 .profile-first .profile-img .profile-txt {
+  display: block;
+}
+body .main-02 .profile-first .profile-img .profile-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+}
+body .main-02 .profile-first .container-box01 {
+  margin: 0 0 0 65px;
+}
+body .main-02 .profile-first .container-box01 .profile-info-name {
+  margin-bottom: 15px;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+body .main-02 .profile-first .container-box01 .profile-info {
+  margin-bottom: 7px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+body .main-02 .profile-first .container-box01 .profile-info:last-child {
+  margin-bottom: 0;
+}
+body .main-02 h2 {
+  font-size: 3.125rem;
+  padding-bottom: 18px;
+}
+body .main-02 h2 strong {
+  color: rgb(255, 86, 157);
+}
+body .main-02 .content-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main-02 .content-txt h2 {
+  padding-bottom: 18px;
+}
+body .main-02 .content-txt .container-info-box {
+  display: flex;
+  gap: 70px;
+}
+body .main-02 .content-txt .container-info-box .profile-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main-02 .content-txt .container-info-box .profile-middle li {
+  padding-bottom: 47px;
+}
+body .main-02 .content-txt .container-info-box .profile-middle li h3 {
+  padding-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+body .main-02 .content-txt .container-info-box .profile-middle li p {
+  font-size: 15px;
+  font-weight: 500;
+}
+body .main-02 .content-txt .container-info-box .profile-middle li:last-child {
+  padding-bottom: 0;
+}
+body .main-02 .content-txt .container-info-box .profile-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main-02 .content-txt .container-info-box .profile-last li {
+  padding-bottom: 47px;
+}
+body .main-02 .content-txt .container-info-box .profile-last li h3 {
+  padding-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+body .main-02 .content-txt .container-info-box .profile-last li p {
+  font-size: 15px;
+  font-weight: 500;
+}
+body .main-02 .content-txt .container-info-box .profile-last li:last-child {
+  padding-bottom: 0;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box {
+  display: flex;
+  flex-direction: column;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 8px;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .photoshap::before {
+  content: "";
+  display: block;
+  background-image: url(../images/photoshap.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .html::before {
+  content: "";
+  display: block;
+  background-image: url(../images/html.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .github::before {
+  content: "";
+  display: block;
+  background-image: url(../images/github.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .catia::before {
+  content: "";
+  display: block;
+  background-image: url(../images/catia.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .illust::before {
+  content: "";
+  display: block;
+  background-image: url(../images/illust.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .css::before {
+  content: "";
+  display: block;
+  background-image: url(../images/css.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .rhino::before {
+  content: "";
+  display: block;
+  background-image: url(../images/Rhinoceros.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .max::before {
+  content: "";
+  display: block;
+  background-image: url(../images/3dsmax.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .figma::before {
+  content: "";
+  display: block;
+  background-image: url(../images/figma.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .java::before {
+  content: "";
+  display: block;
+  background-image: url(../images/javascript.webp);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .main-02 .content-txt .container-info-box .profile-last .use-skill .container-skill-box .skill-box .keyshot::before {
+  content: "";
+  display: block;
+  background-image: url(../images/keyshot.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+body .sec-right {
+  position: relative;
+  width: 73%;
+  height: 100vh;
+}
+body .tokenpost-desc {
+  background-color: #655c53;
+}
+body .tokenpost-desc .tokenpost-num {
+  background: url(../../dist/images/1num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+body .mendini-desc {
+  background-color: #4e4e4d;
+}
+body .mendini-desc .mendini-num {
+  background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+body .verve-desc {
+  border-right: 1px solid #333;
+}
+body .verve-num {
+  background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+body .verve-desc-tit {
+  color: #111;
+  border-bottom: 1px solid #333;
+}
+body .verve-desc-sub {
+  font-weight: 600;
+  color: #111;
+}
+body .verve-desc-txt {
+  font-weight: 400;
+  color: #111;
+}
+body .verve-desc-cont li {
+  color: #111;
+}
+body .verve-desc-webbtn,
+body .verve-desc-code,
+body .verve-desc-figma {
+  border: 1px solid #111;
+}
+body .verve-desc-webbtn a,
+body .verve-desc-code a,
+body .verve-desc-figma a {
+  color: #111;
+}
+body .verve-desc-experience {
+  font-weight: 400;
+  color: #111;
+}
+body .verve-desc-scrollarrow-g {
+  color: #111;
+}
+body .verve-desc-scrollarrow-txt {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+body .verve-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+body .sec-right-img-g {
+  position: relative;
+  width: 30%;
+  height: 73%;
+  overflow: hidden;
+  cursor: pointer;
+}
+body .sec-right-img-g .sec-right-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: background-position 30s ease;
+  cursor: pointer;
+}
+body .sec-right-img-g .sec-right-img:hover {
+  overflow-y: scroll;
+}
+body .sec-right-img-g .verve-cont-img-detail {
+  background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+body .sec-right-img-g .verve-cont-img-purchase {
+  background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  transition: background-position 4s ease;
+}
+body .sec-right-img-g .verve-cont-img-cart {
+  background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  transition: background-position 1.5s ease;
+}
+body .sec-right-img-g:hover .sec-right-img {
+  background-position: 0 100%;
+}
+body .sec-right-img-g .sec-right-img::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
