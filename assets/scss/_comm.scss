@@ -1,7 +1,14 @@
+.container {
+    position: relative;
+    max-width: 1440px;
+}
+
 body {
     color: $white;
     .header {
-        position: relative;
+        position: fixed;
+        top: 0;
+        width: 100%;
         display: block;
         height: 80px;
         background-color: $black;
@@ -24,20 +31,21 @@ body {
             margin: 0 100px;
 
             .squra-box {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border: 2px solid $white;
                 position: relative;
-                color: $white;
-                font-size: 1.875rem;
-                font-weight: bold;
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 40px;
-                    height: 40px;
-                    border: 2px solid $white;
+
+                .squra-txt {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%, -46%);
+                    transform: translate(-50%, -50%);
+                    color: $white;
+                    font-size: 1.875rem;
+                    font-weight: bold;
                 }
             }
             #gnb {
@@ -46,22 +54,30 @@ body {
                     gap: 50px;
                     color: $black;
                     font-size: 0.9375rem;
-                    font-weight: 700;
+                    font-weight: 500;
+                    li .underline-on-hover {
+                        color: $white;
+                        &:hover {
+                            color: $primary;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
             .contact-btn {
                 position: relative;
                 .relative {
-                    color: $primary;
-                    font-size: 0.75rem;
-                    font-weight: 700;
-                    &::after {
-                        content: '';
-                        display: block;
-                        width: 90px;
-                        height: 30px;
-                        border: 1px solid $primary;
-                        border-radius: 50%;
+                    content: '';
+                    display: block;
+                    width: 90px;
+                    height: 30px;
+                    border: 1px solid $primary;
+                    border-radius: 50%;
+                    .relative-txt {
+                        color: $primary;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -72,14 +88,12 @@ body {
         }
     }
     .c-hero {
-        display: block;
+        display: flex;
+        justify-content: center;
         background-color: $black;
         width: 100%;
         height: 100vh;
-        .o-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
+        .container {
             .c-hero__header {
                 width: 100%;
                 height: 100vh;
@@ -87,16 +101,15 @@ body {
                 justify-content: center;
                 align-items: center;
                 .c-hero__title {
-                    font-size: 5.625rem;
+                    font-size: 6.125rem;
                     font-weight: 500;
-                    margin: 0 60px;
                 }
             }
             .c-hero__letter-b {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-100%, -50%);
+                transform: translateX(-100%) translateY(-50%);
                 img {
                     width: auto;
                     height: 423px;
@@ -106,7 +119,7 @@ body {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(0, -50%);
+                transform: translateX(0%) translateY(-50%);
                 img {
                     width: auto;
                     height: 423px;
@@ -119,17 +132,79 @@ body {
                 transform: translate(-50%, 0);
                 font-size: 1.875rem;
                 font-weight: bold;
+                .font-urbanist {
+                    font-weight: 700;
+                }
+                .font-playfair {
+                    font-family: $fontFamilySub;
+                    font-weight: 400;
+                }
             }
+
             .c-icon-scroll {
+                position: absolute;
+                bottom: 50px;
+                right: 0;
+                display: block;
+                width: 165px;
+                height: 168px;
                 img {
                     display: block;
                     width: 165px;
-                    height: auto;
+                    height: 168px;
+                    animation: rotate360 8s linear infinite;
+                }
+                &::after {
+                    content: '\f309';
+                    font-family: 'Line Awesome Free';
+                    font-weight: 900;
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3.125rem;
+                    line-height: 1;
                     position: absolute;
-                    bottom: 75px;
-                    right: 60px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    animation: moveUpDown 1s linear infinite;
                 }
             }
+        }
+    }
+    @keyframes moveFromTopLeft {
+        0% {
+            transform: translate(-100%, -100%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes moveFromTopRight {
+        0% {
+            transform: translate(100%, -100%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    @keyframes rotate360 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes moveUpDown {
+        0%,
+        100% {
+            transform: translate(-50%, -55%);
+        }
+        50% {
+            transform: translate(-50%, -40%);
         }
     }
 }

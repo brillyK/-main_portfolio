@@ -24,6 +24,7 @@ body {
                         .block {
                             position: relative;
                             padding: 13px 0;
+                            font-weight: 700;
                             &::before,
                             &::after {
                                 border-bottom: 1px solid;
@@ -61,14 +62,17 @@ body {
                         letter-spacing: -1px;
                         font-size: 70px;
                         padding-left: 24px;
-                        color: transparent;
-                        -webkit-text-stroke: 0.5px $secondary;
-                        font-weight: bold;
-                        font-style: italic;
+
                         .sub {
                             color: $white;
-                            font-weight: bold;
+                            font-weight: 700;
                             font-style: normal;
+                        }
+                        .name {
+                            color: transparent;
+                            -webkit-text-stroke: 0.5px $secondary;
+                            font-family: $fontFamilySub;
+                            font-weight: 700;
                         }
                     }
                     .top {
@@ -102,205 +106,249 @@ body {
     }
     .main-02 {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         background-color: $black;
         width: 100%;
         height: 100vh;
-        padding: 175px 127px 175px 138px;
-        .profile-first {
+        .container {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 30px 80px 0 0;
-            .profile-img {
-                position: relative;
-                width: max-content;
-                .profile-txt {
-                    display: block;
-                }
-                .profile-pic {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    max-width: 85%;
-                }
-            }
-            .container-box01 {
-                margin: 0 0 0 65px;
-                .profile-info-name {
-                    margin-bottom: 15px;
-                    font-size: 1.875rem;
-                    font-weight: bold;
-                }
-                .profile-info {
-                    margin-bottom: 7px;
-                    font-size: 1.125rem;
-                    font-weight: 500;
-                }
-                .profile-info:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-        h2 {
-            font-size: 3.125rem;
-            padding-bottom: 18px;
-            strong {
-                color: $primary;
-            }
-        }
-        .content-txt {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            h2 {
-                padding-bottom: 18px;
-            }
-            .container-info-box {
-                display: flex;
-                gap: 70px;
-                .profile-middle {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    li {
-                        padding-bottom: 47px;
-                        h3 {
-                            padding-bottom: 10px;
-                            font-size: 1.125rem;
-                            font-weight: bold;
-                        }
-                        p {
-                            font-size: 15px;
-                            font-weight: 500;
-                        }
-                        &:last-child {
-                            padding-bottom: 0;
-                        }
-                    }
-                }
-                .profile-last {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    li {
-                        padding-bottom: 47px;
-                        h3 {
-                            padding-bottom: 10px;
-                            font-size: 1.125rem;
-                            font-weight: bold;
-                        }
-                        p {
-                            font-size: 15px;
-                            font-weight: 500;
-                        }
-                        &:last-child {
-                            padding-bottom: 0;
-                        }
-                    }
 
-                    .use-skill {
-                        .container-skill-box {
-                            display: flex;
-                            justify-content: space-between;
-                            flex-direction: row;
-                            .skill-box {
+            justify-content: space-between;
+            .profile-first {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 30px 93px 0 0;
+                .profile-img {
+                    position: relative;
+                    width: max-content;
+                    .profile-txt {
+                        display: block;
+                        animation: rotate360 15s linear infinite;
+                    }
+                    .profile-pic {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: 85%;
+                    }
+                }
+                @keyframes rotate360 {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+                .container-box01 {
+                    margin: 0 0 0 65px;
+                    .profile-info-name {
+                        margin-bottom: 15px;
+                        font-size: 1.875rem;
+                        font-weight: bold;
+                    }
+                    .profile-info {
+                        margin-bottom: 7px;
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        color: $gray-300;
+                    }
+                    .profile-info:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 3.125rem;
+                padding-bottom: 18px;
+                strong {
+                    color: $primary;
+                }
+            }
+            .content-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2 {
+                    padding-bottom: 18px;
+                    font-family: $fontFamilySub;
+                    font-weight: 700;
+                }
+                .container-info-box {
+                    display: flex;
+                    gap: 70px;
+                    .profile-middle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 47px;
+                        li {
+                            position: relative;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: -10px;
+                                background-color: $white;
+                                width: 1px;
+                                height: 95%;
+                            }
+                            h3 {
+                                padding-bottom: 10px;
+                                font-size: 1.125rem;
+                                font-weight: 700;
+                            }
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                color: $gray-300;
+                            }
+                            &:last-child {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                    .profile-last {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 47px;
+                        li {
+                            position: relative;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: -10px;
+                                background-color: $white;
+                                width: 1px;
+                                height: 95%;
+                            }
+                            h3 {
+                                padding-bottom: 10px;
+                                font-size: 1.125rem;
+                                font-weight: bold;
+                            }
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                color: $gray-300;
+                            }
+                            &:last-child {
+                                padding-bottom: 0;
+                            }
+                        }
+
+                        .use-skill {
+                            .container-skill-box {
                                 display: flex;
-                                flex-direction: column;
-                                p {
+                                justify-content: space-between;
+                                flex-direction: row;
+                                gap: 10px;
+                                .skill-box {
                                     display: flex;
-                                    align-items: center;
-                                    gap: 5px;
-                                    padding-bottom: 8px;
-                                }
-                                .photoshap::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/photoshap.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .html::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/html.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .github::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/github.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .catia::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/catia.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .illust::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/illust.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .css::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/css.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .rhino::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/Rhinoceros.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .max::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/3dsmax.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .figma::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/figma.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .java::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/javascript.webp);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
-                                }
-                                .keyshot::before {
-                                    content: '';
-                                    display: block;
-                                    background-image: url(../images/keyshot.png);
-                                    width: 20px;
-                                    height: 20px;
-                                    background-size: cover;
+                                    flex-direction: column;
+                                    p {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        padding-bottom: 8px;
+                                        &:last-child {
+                                            padding-bottom: 0;
+                                        }
+                                    }
+                                    .photoshap::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/photoshap.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .html::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/html.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .github::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/github.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .catia::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/catia.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .illust::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/illust.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .css::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/css.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .rhino::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/Rhinoceros.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .max::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/3dsmax.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .figma::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/figma.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .java::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/javascript.webp);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
+                                    .keyshot::before {
+                                        content: '';
+                                        display: block;
+                                        background-image: url(../images/keyshot.png);
+                                        width: 20px;
+                                        height: 20px;
+                                        background-size: cover;
+                                    }
                                 }
                             }
                         }
@@ -443,7 +491,7 @@ body {
         margin-left: -14px;
     }
     .sec-left-tit {
-        font-family: $mori;
+        font-family: #fff;
         font-size: 40px;
         font-weight: 800;
         padding: 20px 0 10px;
@@ -451,21 +499,21 @@ body {
         border-bottom: 1px solid rgba(238, 238, 238, 0.5);
     }
     .sec-left-sub {
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 20px;
         font-weight: 400;
         padding-top: 16px;
         color: #fff;
     }
     .sec-left-txt {
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 17px;
         font-weight: 300;
         padding-top: 10px;
         color: #eee;
     }
     .sec-left-cont {
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 16px;
         font-weight: 300;
         padding: 30px 0;
@@ -476,7 +524,7 @@ body {
     }
     .sec-left-btn {
         padding: 6px;
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 16px;
         font-weight: 500;
         border: 1px solid #eee;
@@ -486,7 +534,7 @@ body {
         }
     }
     .sec-left-experience {
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 15px;
         font-weight: 300;
         line-height: 1.7;
@@ -523,7 +571,7 @@ body {
     }
     .sec-left-arrows-txt {
         text-align: end;
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 16px;
         font-weight: 500;
         color: #eee;
@@ -815,7 +863,7 @@ body {
 
     // Section 6 : contact
     .section-contact {
-        background-color: $prim-darkblue;
+        background-color: #fff;
     }
     // Section 6 : left
     .sec-contact-left {
@@ -853,7 +901,7 @@ body {
     .section-contact-tit {
         display: flex;
         .section-contact-tittxt {
-            font-family: $mori;
+            font-family: #fff;
             font-size: 56px;
             font-weight: 600;
             color: #111;
@@ -869,7 +917,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
@@ -901,7 +949,7 @@ body {
     }
     .sec-contact-left {
         .sec-contact-about {
-            font-family: $nanum;
+            font-family: #fff;
             font-size: 14px;
             font-weight: 400;
         }
@@ -918,7 +966,7 @@ body {
         padding: 20px;
     }
     .contact-closing-txt {
-        font-family: $mori;
+        font-family: #fff;
         font-size: 24px;
         font-weight: 500;
         margin: auto;
@@ -928,7 +976,7 @@ body {
         gap: 20px;
     }
     .copyright {
-        font-family: $nanum;
+        font-family: #fff;
         font-size: 16px;
         font-weight: 600;
         padding-top: 80px;

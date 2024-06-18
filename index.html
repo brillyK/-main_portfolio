@@ -6,17 +6,25 @@
         <title>first-portfolio</title>
 
         <!-- css -->
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <!-- js -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/split-type"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
         <script defer src="./assets/js/comm.js"></script>
     </head>
@@ -28,7 +36,9 @@
         <div id="wrap">
             <header id="header" class="header">
                 <div class="container">
-                    <a class="squra-box" href="/">B</a>
+                    <a class="squra-box" href="/">
+                        <div class="squra-txt">B</div>
+                    </a>
                     <nav id="gnb">
                         <ul>
                             <li><a style="opacity: 1" class="underline-on-hover" href="#">INTRO</a></li>
@@ -39,25 +49,28 @@
                         </ul>
                     </nav>
                     <button class="contact-btn" style="opacity: 1">
-                        <span class="relative">CONTACK</span>
+                        <span class="relative">
+                            <div class="relative-txt">CONTACK</div>
+                        </span>
                     </button>
                 </div>
             </header>
             <section class="c-hero" data-onscroll="hero">
-                <div class="o-container">
+                <div class="container">
                     <header class="c-hero__header">
                         <h1 class="c-hero__title">WELCOME TO MY PORTFOLIO</h1>
                     </header>
                     <div class="c-hero__letter-b">
-                        <img src="./image/b3.png" class="w100 h100 o-cover" alt="Lettera B" />
+                        <img src="./image/b3.png" class="w100 h100 o-cover animated" alt="Lettera B" />
                     </div>
                     <div class="c-hero__letter-k">
-                        <img src="./image/k3.png" class="w100 h100 o-cover" alt="Lettera K" />
+                        <img src="./image/k3.png" class="w100 h100 o-cover animated" alt="Lettera K" />
                     </div>
                     <p class="c-hero__subtitle">
                         <span class="font-urbanist">EVOLVING</span>
-                        <span class="font-averia">DESIGNER</span>
+                        <span class="font-playfair">DESIGNER</span>
                     </p>
+
                     <div class="c-icon-scroll">
                         <img src="./image/scroll.png" alt="scroll-under-arrow" />
                     </div>
@@ -181,85 +194,87 @@
                 </section>
             </div>
             <main class="main-02">
-                <ul class="profile-first">
-                    <li class="profile-img">
-                        <img src="./image/profile-txt.svg" alt="profile-text" class="profile-txt" />
-                        <img src="./image/profile-img.png" alt="profile-image" class="profile-pic" />
-                    </li>
-                    <div class="container-box01">
-                        <h2 class="profile-info-name">김가영</h2>
-                        <li class="profile-info profile-info-day">1998.05.22</li>
-                        <li class="profile-info profile-info-email">rkdud9798@naver.com</li>
-                        <li class="profile-info profile-info-kakao">Kakao rkdud9798</li>
-                    </div>
-                </ul>
-                <div class="content-txt">
-                    <h2>ABOUT <strong>ME!</strong></h2>
-                    <div class="container-info-box">
-                        <ul class="profile-middle">
-                            <li>
-                                <h3>EDUCATION</h3>
-                                <p>
-                                    2024 UI/UX디자인&프론트엔드 과정수료
-                                    <br />2024 고려대학교 공학대학원 산업디자인힉과 재학 <br />2021 세명대학교
-                                    산업/시각디자인학과 수석졸업
-                                </p>
-                            </li>
-                            <li>
-                                <h3>ACTIVITIES</h3>
-                                <p>
-                                    2021-23 (주)삼진인터네셔널_주임
-                                    <br />2020 제3회 제천 얼음성페스티벌 제안서_외주 <br />2019 한국 디자인
-                                    사이언스연구소_인턴 <br />2019 디자인출원 제30-1039398_가위 <br />2017 충북
-                                    공공디자인 서포터즈 사업_학생연구원
-                                </p>
-                            </li>
-                            <li>
-                                <h3>CERTIFICATE</h3>
-                                <p>
-                                    GTQ 그래픽기술자격_Photoshap 1급
-                                    <br />MOS: Microsoft Office Powerpoint 2010 <br />국가기술자격증: 컬러리스트 기사
-                                    필기
-                                </p>
-                            </li>
-                        </ul>
-                        <ul class="profile-last">
-                            <li>
-                                <h3>GRODE</h3>
-                                <p>4.34 / 4.5</p>
-                            </li>
-                            <li>
-                                <h3>AWARDS</h3>
-                                <p>
-                                    2020 세명대학교 총장 표창장
-                                    <br />2020 캡스톤 디자인 경진대회_장려상 <br />2019 제12회 에코디자인 공모전_대상
-                                    <br />2019 D2B 디자인페어_동상 <br />2018 국제 사이버 디자인 트렌드 공모전_입선
-                                    <br />2018 제14회 경상북도 캐릭터 공모전_특선
-                                </p>
-                            </li>
-                            <li class="use-skill">
-                                <h3>SKILLS</h3>
-                                <div class="container-skill-box">
-                                    <div class="skill-box">
-                                        <p class="photoshap">Photoshap</p>
-                                        <p class="html">HTML</p>
-                                        <p class="github">Github</p>
-                                        <p class="catia">Catia</p>
+                <div class="container">
+                    <ul class="profile-first">
+                        <li class="profile-img">
+                            <img src="./image/profile-txt.svg" alt="profile-text" class="profile-txt" />
+                            <img src="./image/profile-img.png" alt="profile-image" class="profile-pic" />
+                        </li>
+                        <div class="container-box01">
+                            <h2 class="profile-info-name">김가영</h2>
+                            <li class="profile-info profile-info-day">1998.05.22</li>
+                            <li class="profile-info profile-info-email">rkdud9798@naver.com</li>
+                            <li class="profile-info profile-info-kakao">Kakao rkdud9798</li>
+                        </div>
+                    </ul>
+                    <div class="content-txt">
+                        <h2>ABOUT <strong>ME!</strong></h2>
+                        <div class="container-info-box">
+                            <ul class="profile-middle">
+                                <li>
+                                    <h3>EDUCATION</h3>
+                                    <p>
+                                        2024 UI/UX디자인&프론트엔드 과정수료
+                                        <br />2024 고려대학교 공학대학원 산업디자인힉과 재학 <br />2021 세명대학교
+                                        산업/시각디자인학과 수석졸업
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>ACTIVITIES</h3>
+                                    <p>
+                                        2021-23 (주)삼진인터네셔널_주임
+                                        <br />2020 제3회 제천 얼음성페스티벌 제안서_외주 <br />2019 한국 디자인
+                                        사이언스연구소_인턴 <br />2019 디자인출원 제30-1039398_가위 <br />2017 충북
+                                        공공디자인 서포터즈 사업_학생연구원
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>CERTIFICATE</h3>
+                                    <p>
+                                        GTQ 그래픽기술자격_Photoshap 1급
+                                        <br />MOS: Microsoft Office Powerpoint 2010 <br />국가기술자격증: 컬러리스트
+                                        기사 필기
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="profile-last">
+                                <li>
+                                    <h3>GRODE</h3>
+                                    <p>4.34 / 4.5</p>
+                                </li>
+                                <li>
+                                    <h3>AWARDS</h3>
+                                    <p>
+                                        2020 세명대학교 총장 표창장
+                                        <br />2020 캡스톤 디자인 경진대회_장려상 <br />2019 제12회 에코디자인
+                                        공모전_대상 <br />2019 D2B 디자인페어_동상 <br />2018 국제 사이버 디자인 트렌드
+                                        공모전_입선 <br />2018 제14회 경상북도 캐릭터 공모전_특선
+                                    </p>
+                                </li>
+                                <li class="use-skill">
+                                    <h3>SKILLS</h3>
+                                    <div class="container-skill-box">
+                                        <div class="skill-box">
+                                            <p class="photoshap">Photoshap</p>
+                                            <p class="html">HTML</p>
+                                            <p class="github">Github</p>
+                                            <p class="catia">Catia</p>
+                                        </div>
+                                        <div class="skill-box">
+                                            <p class="illust">Illustrator</p>
+                                            <p class="css">CSS</p>
+                                            <p class="rhino">Rhinoceros</p>
+                                            <p class="max">3DS Max</p>
+                                        </div>
+                                        <div class="skill-box">
+                                            <p class="figma">Figma</p>
+                                            <p class="java">Javascript</p>
+                                            <p class="keyshot">Keyshot</p>
+                                        </div>
                                     </div>
-                                    <div class="skill-box">
-                                        <p class="illust">Illustrator</p>
-                                        <p class="css">CSS</p>
-                                        <p class="rhino">Rhinoceros</p>
-                                        <p class="max">3DS Max</p>
-                                    </div>
-                                    <div class="skill-box">
-                                        <p class="figma">Figma</p>
-                                        <p class="java">Javascript</p>
-                                        <p class="keyshot">Keyshot</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </main>
