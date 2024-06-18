@@ -1,6 +1,7 @@
 .container {
     position: relative;
     max-width: 1440px;
+    margin: 0 60px;
 }
 
 body {
@@ -28,7 +29,6 @@ body {
             height: 80px;
             justify-content: space-between;
             align-items: center;
-            margin: 0 100px;
 
             .squra-box {
                 content: '';
@@ -99,10 +99,78 @@ body {
                 height: 100vh;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-end;
                 .c-hero__title {
-                    font-size: 6.125rem;
-                    font-weight: 500;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 40px;
+                    line-height: 1;
+                    margin-bottom: -3px;
+                    .c-hero__title_01 {
+                        font-size: 90px;
+                        font-weight: 500;
+                        opacity: 1;
+                        animation: fadeInAndOut1 1.3s ease-in-out forwards;
+                    }
+                    @keyframes fadeInAndOut1 {
+                        0%,
+                        34% {
+                            opacity: 0;
+                        }
+                        35%,
+                        75% {
+                            opacity: 1;
+                        }
+                        76%,
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                    .c-hero__title_02 {
+                        font-size: 87px;
+                        font-weight: 500;
+                        opacity: 0;
+                        animation: fadeInAndOut2 1.2s ease-in-out forwards;
+                    }
+                    @keyframes fadeInAndOut2 {
+                        0%,
+                        34% {
+                            opacity: 0;
+                        }
+                        35%,
+                        75% {
+                            opacity: 1;
+                        }
+                        76%,
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                    .c-hero__title_03 {
+                        font-size: 85px;
+                        font-weight: 500;
+                        opacity: 0;
+                        animation: fadeInAndOut2 1.1s ease-in-out forwards;
+                    }
+                    .c-hero__title_04 {
+                        font-size: 82px;
+                        font-weight: 500;
+                        opacity: 0;
+                        animation: fadeInAndOut2 1s ease-in-out forwards;
+                    }
+                    .c-hero__title_05 {
+                        font-size: 79px;
+                        font-weight: 500;
+                        opacity: 0;
+                        animation: fadeInAndOut2 0.9s ease-in-out forwards;
+                    }
+                    .c-hero__title_06 {
+                        font-size: 75px;
+                        font-weight: 500;
+                        opacity: 0;
+                        animation: fadeInAndOut2 0.8s ease-in-out forwards;
+                    }
                 }
             }
             .c-hero__letter-b {
