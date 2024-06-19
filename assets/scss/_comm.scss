@@ -22,9 +22,6 @@ body {
     }
 }
 
-#wrap {
-    background-color: $black;
-}
 .header {
     position: fixed;
     top: 0;
@@ -344,68 +341,88 @@ body {
     background-color: $black;
     .contact-wrapper {
         width: 100%;
-        height: calc(100vh - 75px);
-        margin-top: 75px;
-    }
-    .contact-inner {
-        display: flex;
-        width: 100%;
-        height: 85%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact-info {
-        display: flex;
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 0 20px;
+        height: 100vh;
+        .container {
+            padding: 315px 0 0;
+
+            .contact-inner {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 60px;
+                .contact-info {
+                    display: flex;
+                    width: 70%;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding: 0 20px;
+                    .card {
+                        background: #2f3542;
+                        padding: 0 20px;
+                        margin: 0 10px;
+                        border-radius: 10px;
+                        width: calc(33% - 20px);
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        cursor: pointer;
+                        .card-icon {
+                            font-size: 28px;
+                            width: 60px;
+                            height: 60px;
+                            text-align: center;
+                            line-height: 60px !important;
+                            transition: 0.3s linear;
+                        }
+
+                        .card-tit {
+                            margin-top: 20px;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                            max-height: 0;
+                            opacity: 0;
+                            transition: 0.3s linear;
+                        }
+                    }
+                    .card:hover .card-icon {
+                        background: none;
+                        transform: scale(1.4);
+                    }
+                    .card:hover .card-tit {
+                        color: #ffffff;
+                        max-height: 40px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 
-    .card {
-        background: #2f3542;
-        padding: 0 20px;
-        margin: 0 10px;
-        border-radius: 10px;
-        width: calc(33% - 20px);
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .card-icon {
-        font-size: 28px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        line-height: 60px !important;
-        transition: 0.3s linear;
-    }
-
-    .card:hover .card-icon {
-        background: none;
-        transform: scale(1.4);
-    }
-
-    .card-tit {
-        margin-top: 20px;
-        font-weight: 300;
-        letter-spacing: 2px;
-        max-height: 0;
-        opacity: 0;
-        transition: 0.3s linear;
-    }
-
-    .card:hover .card-tit {
-        color: #ffffff;
-        max-height: 40px;
-        opacity: 1;
+    .contact_wrap {
+        padding-bottom: 20px;
+        .contact_inner {
+            overflow: hidden;
+            display: flex;
+            .box01 {
+                animation: marquee infinite linear;
+                white-space: nowrap;
+                font-family: $fontFamilySub;
+                font-size: 9.375rem;
+                font-weight: 700;
+                padding-left: 40px;
+                animation-duration: 50s;
+                animation-direction: normal;
+                .nic {
+                    color: $gray-900;
+                }
+            }
+        }
     }
 
     .last-comment {

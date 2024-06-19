@@ -284,10 +284,6 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 
-#wrap {
-  background-color: #000;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -591,18 +587,20 @@ body::-webkit-scrollbar-button {
 }
 .sec6 .contact-wrapper {
   width: 100%;
-  height: calc(100vh - 75px);
-  margin-top: 75px;
+  height: 100vh;
 }
-.sec6 .contact-inner {
+.sec6 .contact-wrapper .container {
+  padding: 315px 0 0;
+}
+.sec6 .contact-wrapper .container .contact-inner {
   display: flex;
   width: 100%;
-  height: 85%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
 }
-.sec6 .contact-info {
+.sec6 .contact-wrapper .container .contact-inner .contact-info {
   display: flex;
   width: 70%;
   align-items: center;
@@ -610,7 +608,7 @@ body::-webkit-scrollbar-button {
   margin: 0 auto;
   padding: 0 20px;
 }
-.sec6 .card {
+.sec6 .contact-wrapper .container .contact-inner .contact-info .card {
   background: #2f3542;
   padding: 0 20px;
   margin: 0 10px;
@@ -624,7 +622,7 @@ body::-webkit-scrollbar-button {
   color: #fff;
   cursor: pointer;
 }
-.sec6 .card-icon {
+.sec6 .contact-wrapper .container .contact-inner .contact-info .card .card-icon {
   font-size: 28px;
   width: 60px;
   height: 60px;
@@ -632,11 +630,7 @@ body::-webkit-scrollbar-button {
   line-height: 60px !important;
   transition: 0.3s linear;
 }
-.sec6 .card:hover .card-icon {
-  background: none;
-  transform: scale(1.4);
-}
-.sec6 .card-tit {
+.sec6 .contact-wrapper .container .contact-inner .contact-info .card .card-tit {
   margin-top: 20px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -644,10 +638,34 @@ body::-webkit-scrollbar-button {
   opacity: 0;
   transition: 0.3s linear;
 }
-.sec6 .card:hover .card-tit {
+.sec6 .contact-wrapper .container .contact-inner .contact-info .card:hover .card-icon {
+  background: none;
+  transform: scale(1.4);
+}
+.sec6 .contact-wrapper .container .contact-inner .contact-info .card:hover .card-tit {
   color: #ffffff;
   max-height: 40px;
   opacity: 1;
+}
+.sec6 .contact_wrap {
+  padding-bottom: 20px;
+}
+.sec6 .contact_wrap .contact_inner {
+  overflow: hidden;
+  display: flex;
+}
+.sec6 .contact_wrap .contact_inner .box01 {
+  animation: marquee infinite linear;
+  white-space: nowrap;
+  font-family: "Playfair Display", "Noto Sans KR", sans-serif;
+  font-size: 9.375rem;
+  font-weight: 700;
+  padding-left: 40px;
+  animation-duration: 50s;
+  animation-direction: normal;
+}
+.sec6 .contact_wrap .contact_inner .box01 .nic {
+  color: #212121;
 }
 .sec6 .last-comment {
   display: flex;
