@@ -327,6 +327,8 @@ body::-webkit-scrollbar-button {
   color: #fff;
   font-size: 1.875rem;
   font-weight: bold;
+  display: block;
+  width: 20px;
 }
 .header .container #gnb ul {
   display: flex;
