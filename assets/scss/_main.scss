@@ -264,7 +264,7 @@ body {
                                     .photoshap::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/photoshap.png);
+                                        background-image: url(../../image/photoshap.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -272,7 +272,7 @@ body {
                                     .html::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/html.png);
+                                        background-image: url(../../image/html.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -280,7 +280,7 @@ body {
                                     .github::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/github.png);
+                                        background-image: url(../../image/github.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -288,7 +288,7 @@ body {
                                     .catia::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/catia.png);
+                                        background-image: url(../../image/catia.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -296,7 +296,7 @@ body {
                                     .illust::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/illust.png);
+                                        background-image: url(../../image/illust.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -304,7 +304,7 @@ body {
                                     .css::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/css.png);
+                                        background-image: url(../../image/css.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -312,7 +312,7 @@ body {
                                     .rhino::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/Rhinoceros.png);
+                                        background-image: url(../../image/Rhinoceros.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -320,7 +320,7 @@ body {
                                     .max::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/3dsmax.png);
+                                        background-image: url(../../image/3dsmax.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -328,7 +328,7 @@ body {
                                     .figma::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/figma.png);
+                                        background-image: url(../../image/figma.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -336,7 +336,7 @@ body {
                                     .java::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/javascript.webp);
+                                        background-image: url(../../image/javascript.webp);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -344,7 +344,7 @@ body {
                                     .keyshot::before {
                                         content: '';
                                         display: block;
-                                        background-image: url(../images/keyshot.png);
+                                        background-image: url(../../image/keyshot.png);
                                         width: 20px;
                                         height: 20px;
                                         background-size: cover;
@@ -357,128 +357,34 @@ body {
             }
         }
     }
-    // Section 3
-    // Section 3 : left descirption
-    .tokenpost-desc {
-        background-color: #655c53;
-        .tokenpost-num {
-            background: url(../../dist/images/1num-star.svg) 50% 50% no-repeat;
-            background-size: contain;
-        }
-    }
 
-    // Section 4
-    // Section 4 : left descirption
-    .mendini-desc {
-        background-color: #4e4e4d;
-        .mendini-num {
-            background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
-            background-size: contain;
+    // Layout : Fullpage
+    .fullpage-container {
+        position: relative;
+        margin: 0 auto;
+    }
+    .section {
+        width: 100%;
+        height: 100vh;
+        .fp-tableCell {
+            display: flex;
+            width: 100%;
         }
     }
-
-    // Section 5
-    // Section 5 : left descirption
-    .verve-desc {
-        border-right: 1px solid #333;
-    }
-    .verve-num {
-        background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
-        background-size: contain;
-    }
-    .verve-desc-tit {
-        color: #111;
-        border-bottom: 1px solid #333;
-    }
-    .verve-desc-sub {
-        font-weight: 600;
-        color: #111;
-    }
-    .verve-desc-txt {
-        font-weight: 400;
-        color: #111;
-    }
-    .verve-desc-cont {
-        li {
-            color: #111;
-        }
-    }
-    .verve-desc-webbtn,
-    .verve-desc-code,
-    .verve-desc-figma {
-        border: 1px solid #111;
-        a {
-            color: #111;
-        }
-    }
-    .verve-desc-experience {
-        font-weight: 400;
-        color: #111;
-    }
-    .verve-desc-scrollarrow-g {
-        color: #111;
-    }
-    .verve-desc-scrollarrow-txt {
-        font-size: 15px;
-        font-weight: 600;
-        color: #444;
-    }
-
-    // Section 4 : right contents
-    .verve-cont {
+    .section-inner {
         display: flex;
-        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
         align-items: center;
         padding: 20px;
-        background-color: #111;
-    }
-    .sec-right-img-g {
-        position: relative;
-        width: 30%;
-        height: 73%;
-        overflow: hidden;
-        cursor: pointer;
-        .sec-right-img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            overflow-y: auto;
-            transition: background-position 30s ease;
-            cursor: pointer;
-            &:hover {
-                overflow-y: scroll;
-            }
-        }
-        .verve-cont-img-detail {
-            background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
-            background-position: 0 0;
-            background-size: 100% auto;
-        }
-        .verve-cont-img-purchase {
-            background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
-            background-position: 0 0;
-            background-size: 100% auto;
-            transition: background-position 4s ease;
-        }
-        .verve-cont-img-cart {
-            background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
-            background-position: 0 0;
-            background-size: 100% auto;
-            transition: background-position 1.5s ease;
-        }
     }
 
-    .sec-right-img-g:hover {
-        .sec-right-img {
-            background-position: 0 100%;
-        }
-    }
-    .sec-right-img-g .sec-right-img::-webkit-scrollbar {
-        display: none;
-    }
     // Section Comm : Section 3 ~ Section 5
     // Section Comm : left descirption
+    .section-tokenpost {
+        display: flex;
+    }
     .sec-left {
         width: 27%;
         height: 100%;
@@ -522,6 +428,7 @@ body {
             color: #eee;
         }
     }
+
     .sec-left-btn {
         padding: 6px;
         font-family: #fff;
@@ -531,6 +438,13 @@ body {
         margin-right: 10px;
         a {
             color: #eee;
+        }
+    }
+    .sec-left-btns {
+        .tokenpost-desc-webbtn {
+            a {
+                color: $white;
+            }
         }
     }
     .sec-left-experience {
@@ -556,7 +470,7 @@ body {
             left: 220px;
             width: 30px;
             height: 30px;
-            background: url(../../dist/images/star-yellow.svg) 50% 50% no-repeat;
+            background: url(../../image/star-yellow.svg) 50% 50% no-repeat;
             background-size: contain;
             animation: gray-scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse;
             @keyframes gray-scale-up-center {
@@ -752,16 +666,23 @@ body {
 
     // Section 4
     // Section 4 : left descirption
-    .mendini-desc {
-        background-color: #4e4e4d;
-        .mendini-num {
-            background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
-            background-size: contain;
+    .section-mendini {
+        display: flex;
+        .mendini-desc {
+            background-color: $black;
+            height: 100vh;
+            .mendini-num {
+                background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+                background-size: contain;
+            }
         }
     }
 
     // Section 5
     // Section 5 : left descirption
+    .section-verve {
+        display: flex;
+    }
     .verve-desc {
         border-right: 1px solid #333;
     }
@@ -805,6 +726,393 @@ body {
         font-size: 15px;
         font-weight: 600;
         color: #444;
+    }
+
+    // Section 4 : right contents
+    .verve-cont {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        background-color: #111;
+    }
+    .sec-right-img-g {
+        position: relative;
+        width: 30%;
+        height: 73%;
+        overflow: hidden;
+        cursor: pointer;
+        .sec-right-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+            transition: background-position 30s ease;
+            cursor: pointer;
+            &:hover {
+                overflow-y: scroll;
+            }
+        }
+        .verve-cont-img-detail {
+            background: url(../../dist/images/verve상세페이지.svg) 50% 0 no-repeat;
+            background-position: 0 0;
+            background-size: 100% auto;
+        }
+        .verve-cont-img-purchase {
+            background: url(../../dist/images/verve-결제창.svg) 50% 0 no-repeat;
+            background-position: 0 0;
+            background-size: 100% auto;
+            transition: background-position 4s ease;
+        }
+        .verve-cont-img-cart {
+            background: url(../../dist/images/verve장바구니.svg) 50% 0 no-repeat;
+            background-position: 0 0;
+            background-size: 100% auto;
+            transition: background-position 1.5s ease;
+        }
+    }
+
+    .sec-right-img-g:hover {
+        .sec-right-img {
+            background-position: 0 100%;
+        }
+    }
+    .sec-right-img-g .sec-right-img::-webkit-scrollbar {
+        display: none;
+    }
+    // Section Comm : Section 3 ~ Section 5
+    // Section Comm : left descirption
+    .sec-left {
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+        border-right: 1px solid #333;
+    }
+    .sec-left-icon {
+        width: 80px;
+        height: 80px;
+        margin-left: -14px;
+    }
+    .sec-left-tit {
+        font-family: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        padding: 20px 0 10px;
+        color: #fff;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+    }
+    .sec-left-sub {
+        font-family: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 16px;
+        color: #fff;
+    }
+    .sec-left-txt {
+        font-family: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 10px;
+        color: #eee;
+    }
+    .sec-left-cont {
+        font-family: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 30px 0;
+        li {
+            padding-bottom: 4px;
+            color: #eee;
+        }
+    }
+
+    .sec-left-btn {
+        padding: 6px;
+        font-family: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #eee;
+        margin-right: 10px;
+        a {
+            color: #eee;
+        }
+    }
+    .sec-left-experience {
+        font-family: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.7;
+        padding-top: 50px;
+        line-height: 1.7;
+        color: #eee;
+    }
+    .sec-left-arrows-g {
+        position: relative;
+        display: flex;
+        width: 100%;
+        gap: 16px;
+        justify-content: flex-end;
+        padding-top: 20%;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 68px;
+            left: 220px;
+            width: 30px;
+            height: 30px;
+            background: url(../../image/star-yellow.svg) 50% 50% no-repeat;
+            background-size: contain;
+            animation: gray-scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse;
+            @keyframes gray-scale-up-center {
+                0% {
+                    transform: scale(0.5);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .sec-left-arrows-txt {
+        text-align: end;
+        font-family: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        color: #eee;
+    }
+    .sec-left-arrows {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        animation: arrow-rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+        @keyframes arrow-rotate-vert-center {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+    // Section Comm : left / max-width: 1600px
+    @media only screen and (max-width: 1600px) {
+        .sec-left {
+            padding: 16px;
+        }
+        .sec-left-icon {
+            width: 50px;
+            height: 50px;
+            margin-left: -4px;
+        }
+        .sec-left-tit {
+            font-size: 36px;
+            padding: 10px 0;
+        }
+        .sec-left-sub {
+            font-size: 18px;
+        }
+        .sec-left-txt {
+            font-size: 16px;
+        }
+        .sec-left-cont {
+            padding: 30px 0 20px;
+        }
+        .sec-left-experience {
+            padding-top: 36px;
+        }
+        .sec-left-arrows-g {
+            padding-top: 16%;
+            &::after {
+                top: 38px;
+                left: 118px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .mendini-desc-scrollarrow-g {
+            padding-top: 24%;
+            &::after {
+                top: 64px;
+                left: 118px;
+            }
+        }
+    }
+    // Section Comm : left / max-width: 1440px
+    @media only screen and (max-width: 1440px) {
+        .sec-left-icon {
+            display: none;
+        }
+        .sec-left-tit {
+            font-size: 32px;
+        }
+        .sec-left-sub {
+            padding-top: 30px;
+        }
+        .sec-left-arrows-g {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            padding-top: 12%;
+            &::after {
+                display: none;
+            }
+        }
+        .sec-left-arrows {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // Section Comm : left / max-width: 1280px
+    @media screen and (max-width: 1280px) {
+        .sec-left-sub {
+            font-size: 17px;
+        }
+        .sec-left-txt {
+            font-size: 15px;
+        }
+        .sec-left-cont {
+            padding: 16px 0;
+        }
+        .sec-left-experience {
+            font-size: 14px;
+            padding-top: 24px;
+        }
+        .sec-left-arrows-g {
+            padding-top: 8%;
+            .sec-left-arrows-txt,
+            .verve-desc-scrollarrow-txt {
+                font-size: 14px;
+            }
+        }
+        .sec-left-arrows {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    // Section Comm : left / max-width: 1024px
+    @media screen and (max-width: 1024px) {
+        .sec-left {
+            width: 32%;
+        }
+        // .sec-left-txt {
+        //   display: none;
+        // }
+    }
+    @media screen and (max-width: 868px) {
+        .sec-left {
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 748px) {
+        .sec-left {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 624px) {
+        .sec-left {
+            width: 100%;
+        }
+        .sec-right {
+            display: none;
+        }
+        .sec-left-arrows-g {
+            display: none;
+        }
+        .section-verve {
+            .verve-cont {
+                display: none;
+            }
+        }
+        .section-contact {
+            .sec-contact-left {
+                width: 100%;
+                border-right: 0;
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+            .sec-contact-right {
+                display: none;
+            }
+        }
+    }
+    // Section Comm : right contents
+    .sec-right {
+        position: relative;
+        width: 73%;
+        height: 100vh;
+    }
+
+    // Section 3
+    // Section 3 : left descirption
+    .tokenpost-desc {
+        background-color: $gray-800;
+        height: 100vh;
+        .tokenpost-num {
+            background: url(../../image/star-yellow.svg) 50% 50% no-repeat;
+            background-size: contain;
+        }
+    }
+
+    // Section 4
+    // Section 4 : left descirption
+    .mendini-desc {
+        background-color: #4e4e4d;
+        .mendini-num {
+            background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+            background-size: contain;
+        }
+    }
+
+    // Section 5
+    // Section 5 : left descirption
+    .verve-desc {
+        background-color: $gray-800;
+        border-right: 1px solid #333;
+        height: 100vh;
+    }
+    .verve-num {
+        background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
+        background-size: contain;
+    }
+    .verve-desc-tit {
+        color: $white;
+        border-bottom: 1px solid #333;
+    }
+    .verve-desc-sub {
+        font-weight: 600;
+        color: $white;
+    }
+    .verve-desc-txt {
+        font-weight: 400;
+        color: $white;
+    }
+    .verve-desc-cont {
+        li {
+            color: $white;
+        }
+    }
+    .verve-desc-webbtn,
+    .verve-desc-code,
+    .verve-desc-figma {
+        border: 1px solid $white;
+        a {
+            color: $white;
+        }
+    }
+    .verve-desc-experience {
+        font-weight: 400;
+        color: $white;
+    }
+    .verve-desc-scrollarrow-g {
+        color: $white;
+    }
+    .verve-desc-scrollarrow-txt {
+        font-size: 15px;
+        font-weight: 600;
+        color: $white;
     }
 
     // Section 4 : right contents
