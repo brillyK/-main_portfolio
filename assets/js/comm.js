@@ -63,3 +63,15 @@ AOS.init({
     mirror: false,
     anchorPlacement: 'top-bottom',
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const careerContainer = document.getElementById('career')
+    const nextSection = document.getElementById('next-section')
+
+    careerContainer.addEventListener('scroll', () => {
+        if (careerContainer.scrollTop + careerContainer.clientHeight >= careerContainer.scrollHeight) {
+            // 스크롤이 끝에 도달했을 때 다음 섹션으로 이동
+            nextSection.scrollIntoView({ behavior: 'smooth' })
+        }
+    })
+})
