@@ -260,6 +260,11 @@ legend {
   content: "";
 }
 
+:root {
+  --font-family-main: "Urbanist", "Noto Sans KR", sans-serif;
+  --font-family-sub: "Playfair Display", "Noto Sans KR", sans-serif;
+}
+
 .container {
   position: relative;
   max-width: 1440px;
@@ -1335,7 +1340,7 @@ body::-webkit-scrollbar-button {
   height: 100vh;
 }
 .section-mendini .mendini-desc .mendini-num {
-  background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+  background: url(../../image/star-yellow.svg) 50% 50% no-repeat;
   background-size: contain;
 }
 
@@ -1722,7 +1727,7 @@ body::-webkit-scrollbar-button {
   background-color: #4e4e4d;
 }
 .mendini-desc .mendini-num {
-  background: url(../../dist/images/2num-star.svg) 50% 50% no-repeat;
+  background: url(../../image/star-yellow.svg) 50% 50% no-repeat;
   background-size: contain;
 }
 
